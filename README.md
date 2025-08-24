@@ -15,6 +15,8 @@ Each project is designed to solve a real-world problem, highlighting skills in:
 | **SignMNIST**              | Recognize ASL letters from hand gesture images      | CNN, Feature Extraction                                        | Sign Language MNIST      | 
 
 
+![Weights](Conv.png)
+
 ### Cat vs Dog Recognition
 
 **Objective:** Train a CNN to classify images of cats and dogs with high accuracy, even on unseen data.
