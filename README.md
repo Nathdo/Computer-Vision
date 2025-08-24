@@ -1,14 +1,56 @@
-# Computer-Vision
+# Computer Vision Projects
 
-This repository contains various Computer Vision projects, including my work on Emotion Recognition using Convolutional Neural Networks (CNNs). These projects explore image preprocessing, feature extraction with MaxPooling, and techniques like Dropout to handle overfitting. Each project highlights practical solutions to challenges such as handling different image sizes and improving model performance.
+This repository showcases a collection of Computer Vision projects, from classic image classification to more advanced deep learning applications.
+Each project is designed to solve a real-world problem, highlighting skills in:
 
-## Projects
+* Image preprocessing (resizing, normalization, augmentation)
+* Deep learning modeling with Convolutional Neural Networks (CNNs)
+* Overfitting prevention techniques (Dropout, Data Augmentation, Regularization)
+* Model evaluation and hyperparameter tuning
 
-### CatDog Recognition
-This project focuses on classifying images of cats and dogs using CNNs to extract key features distinguishing between the two. The model is trained on labeled images of cats and dogs, and incorporates data augmentation to improve generalization on unseen data. The project showcases techniques for handling imbalanced classes and tuning hyperparameters to enhance accuracy.
+| Project                    | Goal                                                | Key Techniques                                                 | Dataset                  | 
+| -------------------------- | --------------------------------------------------- | -------------------------------------------------------------- | ------------------------ | 
+| **Cat vs Dog Recognition** | Classify images of cats and dogs                    | CNN, Data Augmentation, Class Balancing, Hyperparameter Tuning | Kaggle Cats & Dogs       | 
+| **Emotion Recognition**    | Detect facial emotions (happy, sad, surprise, etc.) | CNN, MaxPooling, Dropout, Image Resizing                       | FER2013 / Custom Dataset | 
+| **SignMNIST**              | Recognize ASL letters from hand gesture images      | CNN, Feature Extraction                                        | Sign Language MNIST      | 
 
-### Emotion Recognition
-In this project, I developed a model to recognize facial emotions, such as happiness, sadness, and surprise, using CNNs. The model processes facial images, using layers like MaxPooling and Dropout to reduce overfitting while maintaining high accuracy across diverse facial expressions. This project also includes image resizing to standardize input sizes, enhancing the model’s robustness for real-world application.
 
-### SignMNIST
-The SignMNIST project focuses on recognizing American Sign Language (ASL) letters from images of hand gestures. This model is trained on the Sign Language MNIST dataset, where each image represents a single ASL letter (excluding J and Z due to motion). By using convolutional layers, the model effectively identifies hand gestures, presenting an opportunity to assist in ASL interpretation through computer vision.
+### Cat vs Dog Recognition
+
+**Objective:** Train a CNN to classify images of cats and dogs with high accuracy, even on unseen data.
+
+Highlights:
+
+* Used data augmentation (rotation, flip, zoom) to boost generalization.
+* Implemented strategies to handle imbalanced classes.
+* Tuned learning rate, batch size, and architecture for better accuracy.
+
+  ### Emotion Recognition
+
+**Objective:** Detect emotions from facial images for applications in human-computer interaction and social robotics.
+
+Highlights:
+
+* MaxPooling layers for feature extraction.
+* Dropout to reduce overfitting.
+* Standardized image sizes to improve model robustness.
+* Achieved high accuracy across multiple emotion categories.
+
+
+### SignMNIST – ASL Letter Recognition
+
+**Objective:** Recognize American Sign Language letters from images of hand gestures.
+
+Highlights:
+
+* Trained CNN on Sign Language MNIST dataset (excluding J & Z).
+* Potential use cases in assistive technology for deaf/mute communication.
+* Showcased strong feature extraction from low-resolution grayscale images.
+
+
+### Tech Stack
+
+* Languages: Python
+* Libraries: TensorFlow/Keras, NumPy, Pandas
+* Visualization: Matplotlib, Seaborn
+* Image Processing: OpenCV, Pillow
